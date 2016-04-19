@@ -10,7 +10,7 @@
 
 package com.sqa.mz.util.helpers;
 
-import org.junit.*;
+import org.testng.annotations.*;
 
 /**
  * RequestInputInfo //ADDD (description of class)
@@ -45,7 +45,7 @@ public class RequestInputInfo {
 	/**
 	 * @throws java.lang.Exception
 	 */
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
 		System.out.println("Before Test Method");
 	}
@@ -53,7 +53,7 @@ public class RequestInputInfo {
 	/**
 	 * @throws java.lang.Exception
 	 */
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 		System.out.println("After Test Method");
 	}

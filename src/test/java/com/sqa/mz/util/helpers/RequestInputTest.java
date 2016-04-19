@@ -12,7 +12,7 @@ package com.sqa.mz.util.helpers;
 
 import java.util.*;
 
-import org.junit.*;
+import org.testng.annotations.*;
 
 public class RequestInputTest {
 	private static String question;
@@ -51,7 +51,7 @@ public class RequestInputTest {
 
 	}
 
-	@Before
+	@BeforeMethod
 	public void clear() {
 		userName = "";
 		question = "";
@@ -77,8 +77,7 @@ public class RequestInputTest {
 	 * {@link com.sqa.mz.util.helpers.RequestInput#getChar(java.lang.String, char[])}
 	 * .
 	 */
-	@Test
-	@Ignore
+	@Test(enabled = false)
 	public void testGetCharStringCharArray() {
 
 	}

@@ -10,7 +10,7 @@
 
 package com.sqa.mz.util.helpers;
 
-import org.junit.*;
+import org.testng.annotations.*;
 
 public class AppBasicTest {
 
